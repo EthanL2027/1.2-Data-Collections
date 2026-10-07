@@ -28,9 +28,47 @@ def main():
    print(my_classes)
 
    print(len(my_classes) >= 4)
+
+   #If you search function the index is found
+   print(my_classes.index("Math"))
+
+   print("Math" in  my_classes)
+
+   #Adds item at the end
+   my_classes.append("Journalism")
+
+   #Adds item to specific spot
+   my_classes.insert(3, "Biology")
+   print(my_classes)
+
+   # Pop function returns the last item in our list, and removes it from the list
+   print(my_classes.pop())
+
+   #we can sort our list 
+   print(my_classes.sort())
+   print(my_classes)
+
+   numList = [6, -4, 3, 9]
+   # sort returns none
+   numList.sort()
+   print(numList)
+
+   my_classes.sort(reverse=True)
+   numList.sort(reverse=True)
+   print(my_classes)
+   print(numList)
+
+   # makes a copy of your list that is sorted with sorted
+   print(sorted(my_classes, reverse=True))
+
+   sorted_classes = sorted(my_classes)
+   print(sorted_classes)
+
+
    
 
 
 
 if __name__ == "__main__":
     main()
+
